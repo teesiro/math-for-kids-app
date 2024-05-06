@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Luckiest Guy";
+    background-color: #cfcfe0;
+}
+.container{
+    padding: 20px;
+    overflow: hidden;
+    background-color: #f2316efe;
+}
+
+.container h1{
+    float: left;
+    margin-left: 10px;
+    color: white;
+}
+
+.container ul{
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 60%;
+}
+.container li{
+    margin-top: 10px;
+    float: left;
+    padding: 0 20px 0 20px;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 4px;
+    display: block;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 82% 18%;
+}
+.equation{
+    font-size: 65px;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 15%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.equation h1{
+    display: inline;
+    padding: 20px;
+}
+
+.answer-options{
+    font-size: 67px;
+    margin-right: 10px;
+}
+.answer-options h1{
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+#option1{
+    background-color: indianred;
+    transition: 1s;
+}
+#option1:hover{
+    color: crimson;
+    background-color: white;
+}
+#option2{
+    background-color: rgb(7, 76, 154);
+    transition: 1s;
+}
+#option2:hover{
+    color: rgb(20, 83, 220);
+    background-color: white;
+}
+#option3{
+    background-color: rgb(209, 172, 23);
+    transition: 1s;
+}
+#option3:hover{
+    color: rgb(245, 218, 12);
+    background-color: rgb(255, 255, 255);
+}
+@media(max-width:768px){
+    .nav h2{
+        font-size: 1.5rem;
+        float: none;
+        text-align: center;
+    }
+    nav{
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav li{
+        font-size: 1rem;
+    }
+}
+@media(max-width:480px){
+    .nav h2{
+    float: none;
+    text-align: center;
+}
+.equation h1{
+display: inline;
+padding: 10px;
+}
+nav li{
+    font-size: 8rem;
+}
+}
