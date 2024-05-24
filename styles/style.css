@@ -111,17 +111,31 @@ body{
     nav li{
         font-size: 1rem;
     }
+    .answer-options h1{
+        font-size: 60px;
+    }
 }
 @media(max-width:480px){
     .nav h2{
-    float: none;
-    text-align: center;
+        float: none;
+        text-align: center;
+    }
+    .equation h1{
+        display: inline;
+        padding: 10px;
+    }
+    .answer-options h1{
+        font-size: 50px;
+    }
+    nav li{
+        font-size: 8rem;
+    }
 }
-.equation h1{
-display: inline;
-padding: 10px;
-}
-nav li{
-    font-size: 8rem;
-}
+@media(max-width:320px){
+    .equation h1{
+        font-size: 30px;
+    }
+    .answer-options h1{
+        font-size: 30px;
+    }
 }
